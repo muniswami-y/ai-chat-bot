@@ -6,7 +6,7 @@ import google.generativeai as genai
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-model = genai.GenerativeModel("gemini-2.5-flash-lite")
+model = genai.GenerativeModel("gemini-3.5-flash-lite")
 
 
 def safe_ask(prompt, max_tokens=500):

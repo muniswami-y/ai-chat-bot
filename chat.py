@@ -7,7 +7,7 @@ load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 model = genai.GenerativeModel(
-    "gemini-2.5-flash-lite",
+    "gemini-3.5-flash-lite",
     system_instruction="You are a helpful, friendly assistant. Keep answers short."
 )
 
