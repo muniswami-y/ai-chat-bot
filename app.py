@@ -9,7 +9,7 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 app = Flask(__name__)
 
 model = genai.GenerativeModel(
-    "gemini-3.8-flash",
+    "gemini-2.5-flash-lite",
     system_instruction="You are a helpful, friendly assistant. Keep answers concise."
 )
 chat = model.start_chat(history=[])
